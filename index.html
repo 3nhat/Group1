@@ -19,8 +19,8 @@
         --display-ngang: none;
         --display-doc: block;
         --display-content1: block;
-        --display-content2: block;
-        --display-content3: block;
+        --display-content2: none;
+        --display-content3: none;
         
         --display-content-phu: flex;
 
@@ -41,6 +41,7 @@ html, body {
 	 padding: 0;
 	 margin: 0;
 }
+
 
 body, .content, .content1, .content2, .content3 { 
         	overflow: hidden;	
@@ -93,6 +94,18 @@ body, .content, .content1, .content2, .content3 {
     z-index: 99;
     display: var(--display-doc);
 }
+		
+		.HuongDan {
+          	z-index: 100;
+          	width: 100%; height: 100vh; 
+          	background: orange; 
+          	position: fixed; 
+          	top: 0; left: 0; 
+          	padding-top: 48vh; padding-bottom: 48vh;
+          	text-align: center; 
+			display: none;
+
+        }
 
 .header1{
 	width: calc(100vw - 6 * var(--size-standard)/40);
