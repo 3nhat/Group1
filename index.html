@@ -1051,7 +1051,8 @@ console.log = function(msg){
     		history.back();
     		history.forward();
     		window.onpopstate = function () {
-        	history.go(1);
+        	//history.go(1);
+			history.go(0);
     	};
 	
 	window.onbeforeunload = function() {
