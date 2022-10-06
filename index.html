@@ -10,6 +10,7 @@
 	<style>
     		:root{
     			--x: 8s;
+			--display-logo: none;
         
         		--thietbi: 1; /*mobile (dọc): 2; laptop + mobile(ngang): 1*/
         		--size-standard: 25vw;
@@ -370,7 +371,7 @@
 		
 		
 .logo {
-	display: block;
+	display: var(--display-logo);
     font-size: var(--size-standard);
     width: 0.1em;
     height: 1em;
