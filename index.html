@@ -1025,7 +1025,7 @@ var test = "w3s";
 var DefaultPage = "Express1";  //"Group";
 var batdau = true;
 
-function EID(NameID) {return document.getElementById(NameID);}
+window.EID = function(NameID) {return document.getElementById(NameID);}
 	    
 function Func_Event(event, val1, val2) {
 	if (val1==1) return window['Func_ExtEvent_' + val2](event);
