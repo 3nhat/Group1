@@ -1391,6 +1391,18 @@ function Gettoado() {
 	}
   
 }
+	
+	 history.pushState(null, document.title, location.href);
+    		history.back();
+    		history.forward();
+    		window.onpopstate = function () {
+        	history.go(1);
+    	};
+	
+
+	window.addEventListener('beforeunload', function (e) {
+  	return "bạn muốn tải lại trang chương trình?";
+});
 
 window.addEventListener('DOMContentLoaded', (event) => { 
 	preventPullToRefresh('html');
