@@ -827,8 +827,8 @@
 
 <script>
 	
-
-	function EID(NameID) {return document.getElementById(NameID);}
+/*
+	window.EID = function EID(NameID) {return document.getElementById(NameID);}
     
 	function Qtimthietbi(){
     	const toMatch = [
@@ -844,7 +844,7 @@
         
         window.root = document.querySelector(':root');
     }
-    
+ */   
     
     window.Qresize = function Qresize(){
 	    /*
@@ -969,6 +969,23 @@
      },{passive: false});
 	*/
 	function LoadFirst(){
+		window.EID = function EID(NameID) {return document.getElementById(NameID);}
+    
+			function Qtimthietbi(){
+			const toMatch = [
+			  /Android/i,
+			  /webOS/i,
+			  /iPhone/i,
+			  /iPad/i,
+			  /iPod/i,
+			  /BlackBerry/i,
+			  /Windows Phone/i
+			];
+			window.thietbi = toMatch.some((toMatchItem) => { return navigator.userAgent.match(toMatchItem); });
+
+			window.root = document.querySelector(':root');
+		    }
+		
 		window.addEventListener('resize', () => {
 		      Qresize()
 		    });
