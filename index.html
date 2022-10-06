@@ -522,7 +522,7 @@
     	<div id='VirtualButton' class='VirtualButton QuangThu'>31G</div>
     	
 
-	<div class='header' data-swipe-threshold='20' data-swipe-timeout='500' data-swipe-ignore='false'>
+	<div class='header' id='header' data-swipe-threshold='20' data-swipe-timeout='500' data-swipe-ignore='false'>
     	<div class='header1'>Công ty cổ phần tập đoàn 3 Nhất</div>
         <div class='header2'>
         	<div class='header2_1'>
@@ -1188,13 +1188,13 @@
     
     
     
-    document.addEventListener('swiped-left', function(e) {
-	//EID('content1b').addEventListener('swiped-left', function(e) {
+    //document.addEventListener('swiped-left', function(e) {
+	EID('content1b').addEventListener('swiped-left', function(e) {
   		//alert(e.target.className); // element that was swiped
   		//alert(e.detail); // see event data below
 	});
-    document.addEventListener('swiped-right', function(e) {
-  	//EID('content1b').addEventListener('swiped-right', function(e) {	
+    //document.addEventListener('swiped-right', function(e) {
+  	EID('content').addEventListener('swiped-right', function(e) {	
 	alert(e.target.className); // element that was swiped
   		//alert(e.detail); // see event data below
 	});
