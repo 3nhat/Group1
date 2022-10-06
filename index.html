@@ -102,6 +102,23 @@
           		text-align: center; 
 			display: none;
         	}
+		.VirtualButton {
+			z-index: 99;
+			width: 30px; 
+			height: 30px;
+	    		font-size: 30px; 
+			position: absolute; 
+			border-radius: 50%; 
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+			font-weight: 600; 
+			color: red; 
+			padding: 2px; 
+			opacity: 0.8; 
+			top: 30%; 
+			display: flex; 
+			justify-content: center; 
+			align-items: center;
+		}
 
 		.header1{
 			width: calc(100vw - 6 * var(--size-standard)/40);
@@ -498,7 +515,7 @@
         		<div class="loader" onclick="EID('container_loader').style.display = 'none'"></div>
 	  	</div>
     	</div>
-    	<div id='VirtualButton' class='VirtualButton QuangThu' style='display: none'>31G</div>
+    	<div id='VirtualButton' class='VirtualButton QuangThu'>31G</div>
     	
 
 	<div class='header'>
