@@ -1007,7 +1007,7 @@
 		     },{passive: false});
 	}
     
-    LoadFirst();
+    
     
     //document.addEventListener('swiped-left', function(e) {
 	EID('content1b').addEventListener('swiped-left', function(e) {
@@ -1071,6 +1071,7 @@ console.log = function(msg){
 	
 
 window.addEventListener('DOMContentLoaded', (event) => { 
+	LoadFirst();
 	preventPullToRefresh('html');
     	//Qtimthietbi();
         Qresize();
