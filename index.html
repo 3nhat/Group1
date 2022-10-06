@@ -829,7 +829,8 @@
 	
 
 	function EID(NameID) {return document.getElementById(NameID);}
-	var root = document.querySelector(':root');
+	var root;
+	var thietbi;
     
 	function Qtimthietbi(){
     		const toMatch = [
@@ -841,7 +842,8 @@
           		/BlackBerry/i,
           		/Windows Phone/i
      			];
-        	window.thietbi = toMatch.some((toMatchItem) => { return navigator.userAgent.match(toMatchItem); });	
+        	thietbi = toMatch.some((toMatchItem) => { return navigator.userAgent.match(toMatchItem); });
+		root = document.querySelector(':root');
     	}
     
     
