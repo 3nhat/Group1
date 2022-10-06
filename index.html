@@ -830,25 +830,7 @@
 
 	function EID(NameID) {return document.getElementById(NameID);}
 	var root = document.querySelector(':root');
-	
-
-	async function Qtimthietbi(){
-    		const toMatch = [
-          		/Android/i,
-          		/webOS/i,
-          		/iPhone/i,
-          		/iPad/i,
-          		/iPod/i,
-          		/BlackBerry/i,
-          		/Windows Phone/i
-     			];
-        	let myPromise = Promise(function(resolve, reject) { var kq = toMatch.some((toMatchItem) => { return navigator.userAgent.match(toMatchItem); });	
-			resolve(kq);
-  		});						   
-		
-		window.thietbi = await myPromise;
-    	}
-    /*
+    
 	function Qtimthietbi(){
     		const toMatch = [
           		/Android/i,
@@ -861,7 +843,7 @@
      			];
         	window.thietbi = toMatch.some((toMatchItem) => { return navigator.userAgent.match(toMatchItem); });	
     	}
-    */
+    
     
     window.Qresize = function Qresize(){
 	    /*
