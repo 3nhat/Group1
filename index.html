@@ -827,7 +827,7 @@
 
 <script>
 	
-/*
+
 	window.EID = function EID(NameID) {return document.getElementById(NameID);}
     
 	function Qtimthietbi(){
@@ -844,7 +844,7 @@
         
         window.root = document.querySelector(':root');
     }
- */   
+    
     
     window.Qresize = function Qresize(){
 	    /*
@@ -969,23 +969,9 @@
      },{passive: false});
 	*/
 	function LoadFirst(){
-		window.EID = function EID(NameID) {return document.getElementById(NameID);}
+		//window.EID = function EID(NameID) {return document.getElementById(NameID);}
     
-			function Qtimthietbi(){
-			const toMatch = [
-			  /Android/i,
-			  /webOS/i,
-			  /iPhone/i,
-			  /iPad/i,
-			  /iPod/i,
-			  /BlackBerry/i,
-			  /Windows Phone/i
-			];
-			window.thietbi = toMatch.some((toMatchItem) => { return navigator.userAgent.match(toMatchItem); });
-
-			window.root = document.querySelector(':root');
-		    }
-		Qtimthietbi();
+			
 		
 		window.addEventListener('resize', () => {
 		      Qresize()
@@ -1039,7 +1025,7 @@ var test = "w3s";
 var DefaultPage = "Express1";  //"Group";
 var batdau = true;
 
-window.EID = function(NameID) {return document.getElementById(NameID);}
+//window.EID = function(NameID) {return document.getElementById(NameID);}
 	    
 function Func_Event(event, val1, val2) {
 	if (val1==1) return window['Func_ExtEvent_' + val2](event);
@@ -1073,7 +1059,7 @@ console.log = function(msg){
 window.addEventListener('DOMContentLoaded', (event) => { 
 	LoadFirst();
 	preventPullToRefresh('html');
-    	//Qtimthietbi();
+    	Qtimthietbi();
         Qresize();
 	window['toado'](); 
 	var box = EID('VirtualButton');
