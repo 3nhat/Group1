@@ -11,380 +11,395 @@
 <body  data-swipe-threshold='20' data-swipe-timeout='500' data-swipe-ignore='false'>
 
 	<div class='ngang' id='ngang'></div>
-	<div class='doc'>
+	<div class='doc' id='doc'>
 	
-	<div id="Audio" style="display:none">
-		<audio id="myAudio1"><source src="https://3nhat.github.io/Audio/click.mp3" type="audio/mpeg"></audio>
-		<audio id="myAudio2"><source src="https://3nhat.github.io/Audio/sai.mp3" type="audio/mpeg"></audio>
-		<audio id="myAudio3"><source src="https://3nhat.github.io/Audio/trung.mp3" type="audio/mpeg"></audio>
-		<audio id="myAudio4"><source src="https://3nhat.github.io/Audio/Alert.mp3" type="audio/mpeg"></audio>
-	</div>
-    	<div id="HuongDan" class="HuongDan">
-      		Do chương trình sử dụng tính năng tracking đơn hàng nên bạn phải bật định vị và cho phép truy cập định vị, chương trình mới hoạt động. Xin cảm ơn
-    	</div>
-    	<div id="Geo" style="display: none;"></div>
-    	<div id="container_loader">
-	  	<div class="main_loader" >
-        		<div class="loader" onclick="EID('container_loader').style.display = 'none'"></div>
-	  	</div>
-    	</div>
-    	<div id='VirtualButton' class='VirtualButton QuangThu'>31G</div>
-    	
-
-	<div class='header' id='header'>
-		<div class='header1'>Công ty cổ phần tập đoàn 3 Nhất</div>
-		<div class='header2'>
-			<div class='header2_1'>
-			<div class='logo'>
-				<div class='sideLogo headsLogo'><img class='imageLogo1'></div>
-				<div class='sideLogo tailsLogo'><img class='imageLogo2'></div>
+		<div id="Audio" style="display:none">
+			<audio id="myAudio1"><source src="https://3nhat.github.io/Audio/click.mp3" type="audio/mpeg"></audio>
+			<audio id="myAudio2"><source src="https://3nhat.github.io/Audio/sai.mp3" type="audio/mpeg"></audio>
+			<audio id="myAudio3"><source src="https://3nhat.github.io/Audio/trung.mp3" type="audio/mpeg"></audio>
+			<audio id="myAudio4"><source src="https://3nhat.github.io/Audio/Alert.mp3" type="audio/mpeg"></audio>
+		</div>
+		<div id="HuongDan" class="HuongDan">
+			Do chương trình sử dụng tính năng tracking đơn hàng nên bạn phải bật định vị và cho phép truy cập định vị, chương trình mới hoạt động. Xin cảm ơn
+		</div>
+		<div id="Geo" style="display: none;"></div>
+		<div id="container_loader">
+			<div class="main_loader" >
+				<div class="loader" onclick="EID('container_loader').style.display = 'none'"></div>
 			</div>
-		    </div>
-		    <div class='header2_2'>
-
-		    </div>
 		</div>
-		<div class='header3'>
-			<div class='header3_1'>
-			<span class="fa-stack">
-			  <i id='back' class="fa fa-chevron-left fa-stack-2x" style="color: red"></i>
-			</span>
+		<div id='VirtualButton' class='VirtualButton QuangThu'>31G</div>
 
-		    </div>
-		    <div class='header3_2'>Thông tin chạy</div>
-		    <div class='header3_3'>
-					<span class="fa-stack">
-			  <i id='next' class="fa fa-chevron-right fa-stack-2x" style="color: blue"></i>
-			</span>
-		    </div>
 
-		</div>
-	</div>
-
-	<div id='content' class='content'>
-		<div class='content1'>
-			<div class='content1a'>
-				<div class='content1a1'>
-					<span class="fa-stack fa-2x">
-						<i class="fa fa-list" style="color: blue" onclick='testthunghiem()'></i>
-			    		</span>
+		<div class='header' id='header'>
+			<div class='header1'>Công ty cổ phần tập đoàn 3 Nhất</div>
+			<div class='header2'>
+				<div class='header2_1'>
+				<div class='logo'>
+					<div class='sideLogo headsLogo'><img class='imageLogo1'></div>
+					<div class='sideLogo tailsLogo'><img class='imageLogo2'></div>
 				</div>
-				<div class='content1a2'>
+			    </div>
+			    <div class='header2_2'>
+
+			    </div>
+			</div>
+			<div class='header3'>
+				<div class='header3_1'>
+				<span class="fa-stack">
+				  <i id='back' class="fa fa-chevron-left fa-stack-2x" style="color: red"></i>
+				</span>
+
+			    </div>
+			    <div class='header3_2'>Thông tin chạy</div>
+			    <div class='header3_3'>
+						<span class="fa-stack">
+				  <i id='next' class="fa fa-chevron-right fa-stack-2x" style="color: blue"></i>
+				</span>
+			    </div>
+
+			</div>
+		</div>
+
+		<div id='content' class='content'>
+			<div class='content1'>
+				<div class='content1a'>
+					<div class='content1a1'>
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-list" style="color: blue" onclick='testthunghiem()'></i>
+						</span>
+					</div>
+					<div class='content1a2'>
+						<span class="fa-stack fa-2x">
+						<i class="fa fa-plus-square" style="color: red"></i>
+					</span>
+					</div>
+				</div>
+				<div class='content1b' id='content1b'>
+					<div class='khung1'>
+						<div class='content1bK'>
+							<div class='content1bKK'>
+								<div class='VD_content1bKK'>
+									<div class='VD_content1bKKa'>QTDU001</div>
+									<div class='VD_content1bKKb'>QTDU002</div>
+									<div class='VD_content1bKKb2'>
+										<progress min='0' max='100' value='QTDU003' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
+									</div>
+								</div>
+								<div class='VD_content1bKKc'>
+									<div class='VD_content1bKKc1'>QTDU004</div>
+									<div class='VD_content1bKK'>QTDU005</div>
+									<div class='VD_content1bKK'>QTDU006</div>
+									<div class='VD_content1bKK'>QTDU007</div>
+									<div class='VD_content1bKKc2'>
+										<progress min='0' max='100' value='QTDU003' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
+									</div>
+								</div>
+
+								<div class='VD_content1bKKd'>
+									<a>Người Gửi:</a> QTDU008
+								</div>
+								<div class='VD_content1bKKd'>
+									<a>Ghi chú:</a> QTDU009
+								</div>
+								<div class='VD_content1bKKd'>
+									<a>Người Nhận:</a> QTDU010
+								</div>
+							</div>
+						</div>
+
+						<div class='content1bK'>
+							<div class='content1bKK'>
+								<div class='VD_content1bKK'>
+									<div class='VD_content1bKKa'>234567Q</div>
+									<div class='VD_content1bKKb'>Phát + 1</div>
+									<div class='VD_content1bKKb2'>
+										<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
+									</div>
+								</div>
+								<div class='VD_content1bKKc'>
+									<div class='VD_content1bKKc1'>Hàng thịt cá đông lạnh</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKKc2'>
+										<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
+									</div>
+								</div>
+
+								<div class='VD_content1bKKd'>
+									<a>Người Gửi:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
+								</div>
+								<div class='VD_content1bKKd'>
+									<a>Ghi chú:</a> (Khai giá) (đồng kiểm) (báo phát) (Dễ vỡ) (Phát trước 17h30)
+								</div>
+								<div class='VD_content1bKKd'>
+									<a>Người Nhận:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
+								</div>
+							</div>
+						</div>
+
+						<div class='content1bK'>
+							<div class='content1bKK'>
+								<div class='VD_content1bKK'>
+									<div class='VD_content1bKKa'>234567Q</div>
+									<div class='VD_content1bKKb'>Phát + 1</div>
+									<div class='VD_content1bKKb2'>
+										<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
+									</div>
+								</div>
+								<div class='VD_content1bKKc'>
+									<div class='VD_content1bKKc1'>Hàng thịt cá đông lạnh</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKKc2'>
+										<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
+									</div>
+								</div>
+
+								<div class='VD_content1bKKd'>
+									<a>Người Gửi:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
+								</div>
+								<div class='VD_content1bKKd'>
+									<a>Ghi chú:</a> (Khai giá) (đồng kiểm) (báo phát) (Dễ vỡ) (Phát trước 17h30)
+								</div>
+								<div class='VD_content1bKKd'>
+									<a>Người Nhận:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
+								</div>
+							</div>
+						</div>
+
+						<div class='content1bK'>
+							<div class='content1bKK'>
+								<div class='VD_content1bKK'>
+									<div class='VD_content1bKKa'>234567Q</div>
+									<div class='VD_content1bKKb'>Phát + 1</div>
+									<div class='VD_content1bKKb2'>
+										<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
+									</div>
+								</div>
+								<div class='VD_content1bKKc'>
+									<div class='VD_content1bKKc1'>Hàng thịt cá đông lạnh</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKKc2'>
+										<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
+									</div>
+								</div>
+
+								<div class='VD_content1bKKd'>
+									<a>Người Gửi:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
+								</div>
+								<div class='VD_content1bKKd'>
+									<a>Ghi chú:</a> (Khai giá) (đồng kiểm) (báo phát) (Dễ vỡ) (Phát trước 17h30)
+								</div>
+								<div class='VD_content1bKKd'>
+									<a>Người Nhận:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
+								</div>
+							</div>
+						</div>
+
+						<div class='content1bK'>
+							<div class='content1bKK'>
+								<div class='VD_content1bKK'>
+									<div class='VD_content1bKKa'>234567Q</div>
+									<div class='VD_content1bKKb'>Phát + 1</div>
+									<div class='VD_content1bKKb2'>
+										<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
+									</div>
+								</div>
+								<div class='VD_content1bKKc'>
+									<div class='VD_content1bKKc1'>Hàng thịt cá đông lạnh</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKK'>22/02/2022</div>
+									<div class='VD_content1bKKc2'>
+										<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
+									</div>
+								</div>
+
+								<div class='VD_content1bKKd'>
+									<a>Người Gửi:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
+								</div>
+								<div class='VD_content1bKKd'>
+									<a>Ghi chú:</a> (Khai giá) (đồng kiểm) (báo phát) (Dễ vỡ) (Phát trước 17h30)
+								</div>
+								<div class='VD_content1bKKd'>
+									<a>Người Nhận:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+			<div class='content2'>
+				<div class='content2a'>
+				<div class='content2a1'>
+					<span class="fa-stack fa-2x">
+						<i class="fa fa-list" style="color: blue"></i>
+				    </span>
+				</div>
+				<div class='content2a2'>
 					<span class="fa-stack fa-2x">
 					<i class="fa fa-plus-square" style="color: red"></i>
-			    	</span>
+				    </span>
 				</div>
-			</div>
-			<div class='content1b' id='content1b'>
-				<div class='khung1'>
-			  		<div class='content1bK'>
-			      			<div class='content1bKK'>
-							<div class='VD_content1bKK'>
-				  				<div class='VD_content1bKKa'>QTDU001</div>
-					  			<div class='VD_content1bKKb'>QTDU002</div>
-				  				<div class='VD_content1bKKb2'>
-				      					<progress min='0' max='100' value='QTDU003' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
-				  				</div>
-							</div>
-							<div class='VD_content1bKKc'>
-				  				<div class='VD_content1bKKc1'>QTDU004</div>
-				  				<div class='VD_content1bKK'>QTDU005</div>
-				  				<div class='VD_content1bKK'>QTDU006</div>
-				  				<div class='VD_content1bKK'>QTDU007</div>
-				  				<div class='VD_content1bKKc2'>
-				      					<progress min='0' max='100' value='QTDU003' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
-				  				</div>
-							</div>
-
-							<div class='VD_content1bKKd'>
-				  				<a>Người Gửi:</a> QTDU008
-							</div>
-							<div class='VD_content1bKKd'>
-				  				<a>Ghi chú:</a> QTDU009
-							</div>
-							<div class='VD_content1bKKd'>
-				  				<a>Người Nhận:</a> QTDU010
-							</div>
-			      			</div>
-			  		</div>
-				
+			    </div>
+			    <div class='content2b' id='content2b'>
+				<div class='khung2'>
 					<div class='content1bK'>
-			      			<div class='content1bKK'>
-							<div class='VD_content1bKK'>
-				  				<div class='VD_content1bKKa'>234567Q</div>
-					  			<div class='VD_content1bKKb'>Phát + 1</div>
-				  				<div class='VD_content1bKKb2'>
-				      					<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
-				  				</div>
-							</div>
-							<div class='VD_content1bKKc'>
-				  				<div class='VD_content1bKKc1'>Hàng thịt cá đông lạnh</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKKc2'>
-				      					<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
-				  				</div>
-							</div>
+						<div class='content1bKK'>
+							<div class='VD_content1bKK_icon'>
+								<span class='icon1 fa-stack'>
+									<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
+									<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
+								</span>
+								<span class='fa-stack icon1Text1'>
+									<i class='fa-stack-1x'>Quang</i>
+								</span>
+								<span class='fa-stack icon1Text2'>
+									<i class='fa-stack-1x'>Thu</i>
+								</span>
 
-							<div class='VD_content1bKKd'>
-				  				<a>Người Gửi:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
 							</div>
-							<div class='VD_content1bKKd'>
-				  				<a>Ghi chú:</a> (Khai giá) (đồng kiểm) (báo phát) (Dễ vỡ) (Phát trước 17h30)
-							</div>
-							<div class='VD_content1bKKd'>
-				  				<a>Người Nhận:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
-							</div>
-			      			</div>
-			  		</div>
-					
+						</div>
+					</div>
+
 					<div class='content1bK'>
-			      			<div class='content1bKK'>
-							<div class='VD_content1bKK'>
-				  				<div class='VD_content1bKKa'>234567Q</div>
-					  			<div class='VD_content1bKKb'>Phát + 1</div>
-				  				<div class='VD_content1bKKb2'>
-				      					<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
-				  				</div>
-							</div>
-							<div class='VD_content1bKKc'>
-				  				<div class='VD_content1bKKc1'>Hàng thịt cá đông lạnh</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKKc2'>
-				      					<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
-				  				</div>
-							</div>
+						<div class='content1bKK'>
+							<div class='VD_content1bKK_icon'>
+								<span class='icon1 fa-stack'>
+									<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
+									<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
+								</span>
+								<span class='fa-stack icon1Text1'>
+									<i class='fa-stack-1x'>Quang</i>
+								</span>
+								<span class='fa-stack icon1Text2'>
+									<i class='fa-stack-1x'>Thu</i>
+								</span>
 
-							<div class='VD_content1bKKd'>
-				  				<a>Người Gửi:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
 							</div>
-							<div class='VD_content1bKKd'>
-				  				<a>Ghi chú:</a> (Khai giá) (đồng kiểm) (báo phát) (Dễ vỡ) (Phát trước 17h30)
-							</div>
-							<div class='VD_content1bKKd'>
-				  				<a>Người Nhận:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
-							</div>
-			      			</div>
-			  		</div>
-					
+						</div>
+					</div>
+
 					<div class='content1bK'>
-			      			<div class='content1bKK'>
-							<div class='VD_content1bKK'>
-				  				<div class='VD_content1bKKa'>234567Q</div>
-					  			<div class='VD_content1bKKb'>Phát + 1</div>
-				  				<div class='VD_content1bKKb2'>
-				      					<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
-				  				</div>
-							</div>
-							<div class='VD_content1bKKc'>
-				  				<div class='VD_content1bKKc1'>Hàng thịt cá đông lạnh</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKKc2'>
-				      					<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
-				  				</div>
-							</div>
+						<div class='content1bKK'>
+							<div class='VD_content1bKK_icon'>
+								<span class='icon1 fa-stack'>
+									<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
+									<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
+								</span>
+								<span class='fa-stack icon1Text1'>
+									<i class='fa-stack-1x'>Quang</i>
+								</span>
+								<span class='fa-stack icon1Text2'>
+									<i class='fa-stack-1x'>Thu</i>
+								</span>
 
-							<div class='VD_content1bKKd'>
-				  				<a>Người Gửi:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
 							</div>
-							<div class='VD_content1bKKd'>
-				  				<a>Ghi chú:</a> (Khai giá) (đồng kiểm) (báo phát) (Dễ vỡ) (Phát trước 17h30)
-							</div>
-							<div class='VD_content1bKKd'>
-				  				<a>Người Nhận:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
-							</div>
-			      			</div>
-			  		</div>
-					
+						</div>
+					</div>
+
 					<div class='content1bK'>
-			      			<div class='content1bKK'>
-							<div class='VD_content1bKK'>
-				  				<div class='VD_content1bKKa'>234567Q</div>
-					  			<div class='VD_content1bKKb'>Phát + 1</div>
-				  				<div class='VD_content1bKKb2'>
-				      					<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
-				  				</div>
-							</div>
-							<div class='VD_content1bKKc'>
-				  				<div class='VD_content1bKKc1'>Hàng thịt cá đông lạnh</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKK'>22/02/2022</div>
-				  				<div class='VD_content1bKKc2'>
-				      					<progress min='0' max='100' value='80' style= 'accent-color: #30cc7e; place-self: center; width: clamp(100%, 60%, 100%);'></progress>
-				  				</div>
-							</div>
+						<div class='content1bKK'>
+							<div class='VD_content1bKK_icon'>
+								<span class='icon1 fa-stack'>
+									<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
+									<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
+								</span>
+								<span class='fa-stack icon1Text1'>
+									<i class='fa-stack-1x'>Quang</i>
+								</span>
+								<span class='fa-stack icon1Text2'>
+									<i class='fa-stack-1x'>Thu</i>
+								</span>
 
-							<div class='VD_content1bKKd'>
-				  				<a>Người Gửi:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
 							</div>
-							<div class='VD_content1bKKd'>
-				  				<a>Ghi chú:</a> (Khai giá) (đồng kiểm) (báo phát) (Dễ vỡ) (Phát trước 17h30)
+						</div>
+					</div>
+
+					<div class='content1bK'>
+						<div class='content1bKK'>
+							<div class='VD_content1bKK_icon'>
+								<span class='icon1 fa-stack'>
+									<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
+									<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
+								</span>
+								<span class='fa-stack icon1Text1'>
+									<i class='fa-stack-1x'>Quang</i>
+								</span>
+								<span class='fa-stack icon1Text2'>
+									<i class='fa-stack-1x'>Thu</i>
+								</span>
+
 							</div>
-							<div class='VD_content1bKKd'>
-				  				<a>Người Nhận:</a> (987654321.84) (U234567Q) (Công ty xyz) (1/37, Hoàng Việt, PH.04, QU.TÂN BÌNH, TP.HỒ CHÍ MINH)
+						</div>
+					</div>
+
+					<div class='content1bK'>
+						<div class='content1bKK'>
+							<div class='VD_content1bKK_icon'>
+								<span class='icon1 fa-stack'>
+									<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
+									<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
+								</span>
+								<span class='fa-stack icon1Text1'>
+									<i class='fa-stack-1x'>Quang</i>
+								</span>
+								<span class='fa-stack icon1Text2'>
+									<i class='fa-stack-1x'>Thu</i>
+								</span>
+
 							</div>
-			      			</div>
-			  		</div>
-					
+						</div>
+					</div>
+
+
+
 
 				</div>
+			    </div>
+			</div>
+			<div class='content3' >
+				<div class='content3a'>
+					<div class='content3a1'>
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-list" style="color: blue"></i>
+						</span>
+					</div>
+					<div class='content3a2'>
+						<span class="fa-stack fa-2x">
+							<i class="fa fa-plus-square" style="color: red"></i>
+						</span>
+					</div>
+				</div>
+				<div id='content3b' class='content3b'>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id='DDOS' class='DDOS'>
+		<div id="xacnhan" style="display: none">
+			<div id="captcha2"></div>
+			<input type="text" class="CaptchaInput" placeholder="Mã xác thực" id="cpatchaTextBox"/>
+		</div>
+		<div id="container" class="container" style="display: none">
+			<div class="captcha">
+				<canvas id="c"></canvas>
+				<canvas id="puzzle"></canvas>
+				<input id="slider" type="range", value="0", min="0", step="1">
 
 			</div>
 		</div>
-		<div class='content2'>
-			<div class='content2a'>
-			<div class='content2a1'>
-				<span class="fa-stack fa-2x">
-					<i class="fa fa-list" style="color: blue"></i>
-			    </span>
-			</div>
-			<div class='content2a2'>
-				<span class="fa-stack fa-2x">
-				<i class="fa fa-plus-square" style="color: red"></i>
-			    </span>
-			</div>
-		    </div>
-		    <div class='content2b' id='content2b'>
-			<div class='khung2'>
-				<div class='content1bK'>
-			      		<div class='content1bKK'>
-						<div class='VD_content1bKK_icon'>
-				  			<span class='icon1 fa-stack'>
-				    				<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
-				    				<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
-				  			</span>
-				  			<span class='fa-stack icon1Text1'>
-				    				<i class='fa-stack-1x'>Quang</i>
-				  			</span>
-				  			<span class='fa-stack icon1Text2'>
-				    				<i class='fa-stack-1x'>Thu</i>
-				  			</span>
-
-						</div>
-			      		</div>
-			  	</div>
-
-			  	<div class='content1bK'>
-			      		<div class='content1bKK'>
-						<div class='VD_content1bKK_icon'>
-				  			<span class='icon1 fa-stack'>
-				    				<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
-				    				<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
-				  			</span>
-				  			<span class='fa-stack icon1Text1'>
-				    				<i class='fa-stack-1x'>Quang</i>
-				  			</span>
-				  			<span class='fa-stack icon1Text2'>
-				    				<i class='fa-stack-1x'>Thu</i>
-				  			</span>
-
-						</div>
-			      		</div>
-			  	</div>
-				
-				<div class='content1bK'>
-			      		<div class='content1bKK'>
-						<div class='VD_content1bKK_icon'>
-				  			<span class='icon1 fa-stack'>
-				    				<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
-				    				<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
-				  			</span>
-				  			<span class='fa-stack icon1Text1'>
-				    				<i class='fa-stack-1x'>Quang</i>
-				  			</span>
-				  			<span class='fa-stack icon1Text2'>
-				    				<i class='fa-stack-1x'>Thu</i>
-				  			</span>
-
-						</div>
-			      		</div>
-			  	</div>
-				
-				<div class='content1bK'>
-			      		<div class='content1bKK'>
-						<div class='VD_content1bKK_icon'>
-				  			<span class='icon1 fa-stack'>
-				    				<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
-				    				<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
-				  			</span>
-				  			<span class='fa-stack icon1Text1'>
-				    				<i class='fa-stack-1x'>Quang</i>
-				  			</span>
-				  			<span class='fa-stack icon1Text2'>
-				    				<i class='fa-stack-1x'>Thu</i>
-				  			</span>
-
-						</div>
-			      		</div>
-			  	</div>
-				
-				<div class='content1bK'>
-			      		<div class='content1bKK'>
-						<div class='VD_content1bKK_icon'>
-				  			<span class='icon1 fa-stack'>
-				    				<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
-				    				<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
-				  			</span>
-				  			<span class='fa-stack icon1Text1'>
-				    				<i class='fa-stack-1x'>Quang</i>
-				  			</span>
-				  			<span class='fa-stack icon1Text2'>
-				    				<i class='fa-stack-1x'>Thu</i>
-				  			</span>
-
-						</div>
-			      		</div>
-			  	</div>
-				
-				<div class='content1bK'>
-			      		<div class='content1bKK'>
-						<div class='VD_content1bKK_icon'>
-				  			<span class='icon1 fa-stack'>
-				    				<i class='fa-regular fa-square fa-spin fa-stack-2x' style='animation-duration: 10s;'></i>
-				    				<i class='fa-solid fa-truck-fast fa-beat fa-stack-1x' style='--fa-beat-scale: 1.2;'></i>
-				  			</span>
-				  			<span class='fa-stack icon1Text1'>
-				    				<i class='fa-stack-1x'>Quang</i>
-				  			</span>
-				  			<span class='fa-stack icon1Text2'>
-				    				<i class='fa-stack-1x'>Thu</i>
-				  			</span>
-
-						</div>
-			      		</div>
-			  	</div>
-
-
-
-
-			</div>
-		    </div>
-		</div>
-		<div class='content3' >
-			<div class='content3a'>
-			<div class='content3a1'>
-				<span class="fa-stack fa-2x">
-					<i class="fa fa-list" style="color: blue"></i>
-			    	</span>
-			</div>
-			<div class='content3a2'>
-				<span class="fa-stack fa-2x">
-					<i class="fa fa-plus-square" style="color: red"></i>
-			    	</span>
-			</div>
-		    </div>
-		    <div id='content3b' class='content3b'>
-
-		    </div>
-		</div>
-	    </div>
-
 	</div>
 	
 	<script src="https://3nhat.github.io/JS/index_Group_x.js"></script>
